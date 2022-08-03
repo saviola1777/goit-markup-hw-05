@@ -8,18 +8,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <title>WebStudio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="../goit-markup-hw-04/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body> 
     <!--Шапка-->
 <header class="header"> <!--header клас дла хедера-->
 <div class="cointeiner display">
-<nav class="header-nav display"> <!--nav клас для навігації-->
+<nav class="header-nav"> <!--nav клас для навігації-->
  <a class="header-link-logo" href="#">Web<span class="header-span">Studio</span></a>
     <ul class="header-list-nav"> <!--List - список-->
     
-    <li class="item-nav"><a href="../goit-markup-hw-05/index.html" class="header-link current">Студія</a></li>
-    <li class="item-nav"><a href="../goit-markup-hw-05/portfolio.html" class="header-link ">Портфоліо</a></li>
+    <li class="item-nav"><a href="./index.html" class="header-link current">Студія</a></li>
+    <li class="item-nav"><a href="./portfolio.html" class="header-link ">Портфоліо</a></li>
     <li class="item-nav"><a href="#" class="header-link">Контакти</a></li>
     
     </ul>
@@ -48,9 +48,21 @@
         <!--Рішення бізнесу и кнопка-->
 
 <section class="section-bisnes">
+
 <div class="cointeiner">
 <h1 class="bisnes-title">Ефективні рішення для вашого бізнесу</h1>
-<button type="button" class="hero-btn">Замовити послугу</button>
+<button  type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+     <div class="div-btn">
+        <button class="btn-modal" data-modal-close> 
+        <svg class="icon-close">
+<use href="./images/icons.svg.svg#icon-close"></use>
+</svg>
+     </button>
+     </div>
+    </div>
+</div>
 </div>
 </section>
 
@@ -110,12 +122,22 @@
 <h2 class="type-activity-title">Чим ми займаємося</h2>
 <ul class="type-activity-list">
     
-    <li class="activity-item"><img src="./images/img-comp.jpg" alt="Программирование" width="370" height="294" class="type-activity-img"></li>
+ <li class="activity-item">
+    <img src="./images/img-comp.jpg" alt="Программирование" width="370" height="294" class="type-activity-img">
+    <p class="active-text">Десктопні додатки</p>
+</li>
     
-    <li class="activity-item"><img src="./images/img-tel.jpg" alt="Адаптиная верстка"  width="370" height="294" class="type-activity-img"></li>
+<li class="activity-item">
+    <img src="./images/img-tel.jpg" alt="Адаптиная верстка"  width="370" height="294" class="type-activity-img">
+    <p class="active-text">Мобільні додатки</p>
+</li>
     
-    <li class="activity-item"><img src="./images/img-lap.jpg" alt="Дизайн"  width="370" height="294" class="type-activity-img"></li>
+<li class="activity-item">
+    <img src="./images/img-lap.jpg" alt="Дизайн"  width="370" height="294" class="type-activity-img">
+    <p class="active-text">Дизайнерські рішення</p>
+</li>
 </ul>
+
 </div>
 </section>
         <!--Наша команда-->
